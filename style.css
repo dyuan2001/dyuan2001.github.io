@@ -3,6 +3,8 @@ body{
     padding: 0;
     background: url("sleeping-cat.gif");
     background-size: cover;
+    color: white;
+    font-family: "Century Gothic", sans-serif;
 }
 .box{
     width: 450px;
@@ -51,4 +53,12 @@ ul{
 }
 .box li a:hover{
     color: #b9b9b9;
+}
+
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    text-align: center;
+    padding: 16px;
 }
