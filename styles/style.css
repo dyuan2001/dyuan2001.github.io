@@ -1,0 +1,295 @@
+/* Global styles */
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+header {
+  padding-top: 1.1em;
+  padding-bottom: 0.1em;
+  text-align: center;
+  background-image: url("/resources/banner.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header p {
+  font-weight: 400;
+  font-style: italic;
+}
+
+nav {
+  background-color: #222;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Specific styles for the Experience page */
+
+section {
+  margin-bottom: 4em;
+}
+
+body main section {
+  margin-top: 2.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1em;
+}
+
+ul li p {
+  margin: 0.5em 0;
+}
+
+a {
+  color: #00BFFF;
+}
+
+.logo img {
+  height: 15px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text img {
+  vertical-align: text-bottom;
+  width: 2em; /* adjust size as needed */
+  margin-top: 1.75em;
+  margin-right: 0.75em; /* adjust spacing as needed */
+}
+
+.portrait-section {
+  background-color: #333;
+  padding: 25px 0;
+}
+
+.portrait {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 2rem;
+}
+
+.social-icons a:hover {
+  color: #0077B5; /* LinkedIn blue */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* Subtle nods to software engineering */
+nav::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  z-index: -1;
+}
+
+nav a:hover::before {
+  content: '>';
+  display: inline-block;
+  margin-right: 0.5em;
+  transform: translateX(-0.2em);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+nav a:hover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+  animation: hover 1s infinite;
+}
+
+@keyframes hover {
+  50% {
+    transform: translateX(0.2em);
+  }
+}
+
+/* Specific styles for the Contact page */
+
+/* Apply the dark theme to the entire form */
+form {
+  background-color: #1f1f1f;
+  color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Style the form header with a gradient background */
+form legend {
+  background: linear-gradient(to right, #1c1c1c, #0f0f0f);
+  color: #f8f8f8;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Style the labels and form controls */
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: #2d2d2d;
+  color: #f8f8f8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  background-color: #2d2d2d;
+  color: #f8f8f8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* Style the submit button with a gradient background */
+form input[type="submit"] {
+  display: inline-block;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #f8f8f8;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add a subtle engineering nod by changing the cursor to a pointer when hovering over form controls */
+form input:hover,
+form button:hover {
+  cursor: pointer;
+}
