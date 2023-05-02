@@ -10,48 +10,52 @@
     <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
-    <!-- Header. Defined in header.html. Change there then copy changes to all pages. -->
-    <header>
-        <h1>Daniel Yuan</h1>
-        <p>Software Engineer</p>
-    </header>
-    <nav>
-        <ul>
-        <li class="logo">
-            <a href="/index.html">
-                <img src="/resources/home.png" alt="Logo">
-            </a>
-        </li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="/pages/experience.html">Experience</a></li>
-        <li><a href="/pages/resume.html">Resume</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- End header. -->
-    <main>
-      <h2>Contact Me</h2>
-      <p>Please feel free to contact me using the form below or the following socials:</p>
-      <ul>
-        <li><strong><em>Email:</em></strong> dyuan@gatech.edu</li>
-        <li><strong><em>LinkedIn:</em></strong> <a href=https://www.linkedin.com/in/dyuan01/>dyuan01</a></li>
-      </ul>
-      <form action="mailto:dyuan@gatech.edu" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <input type="submit" value="Send">
-      </form>
-    </main>
-    <!-- Footer. Defined in footer.html. Change there then copy changes to all pages. -->
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2023 Daniel Yuan</p>
+    <div id="page-container">
+        <div id="content-wrap">
+            <!-- Header. Defined in header.html. Change there then copy changes to all pages. -->
+            <header>
+                <h1>Daniel Yuan</h1>
+                <p>Software Engineer</p>
+            </header>
+            <nav>
+                <ul>
+                <li class="logo">
+                    <a href="/index.html">
+                        <img src="/resources/home.png" alt="Logo">
+                    </a>
+                </li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/experience.html">Experience</a></li>
+                <li><a href="/pages/resume.html">Resume</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- End header. -->
+            <main>
+            <h2>Contact Me</h2>
+            <p>Please feel free to contact me using the form below or the following socials:</p>
+            <ul>
+                <li><strong><em>Email:</em></strong> dyuan@gatech.edu</li>
+                <li><strong><em>LinkedIn:</em></strong> <a href=https://www.linkedin.com/in/dyuan01/>/in/dyuan01</a></li>
+            </ul>
+            <form action="mailto:dyuan@gatech.edu" method="POST" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+            </main>
         </div>
-    </footer>
-    <!-- End footer. -->
+        <!-- Footer. Defined in footer.html. Change there then copy changes to all pages. -->
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2023 Daniel Yuan</p>
+            </div>
+        </footer>
+        <!-- End footer. -->
+    </div>
   </body>
 </html>
